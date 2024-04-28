@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registro">
+            <form id="formulario">
+                <h2>Registro de usuario</h2>
+                <div class="form-group">
+                    <label for="usuario" class="etiqueta">Nombre:</label>
+                    <input type="text" id="usuario" name="usuario" class="valor">
+                    <div id="messageName" class="messageErroeEmail"></div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="correo" class="etiqueta">Correo:</label>
+                    <input type="text" id="correo" name="correo" class="valor">
+                    <div class="messageErroreEmail" id="messageEmail"></div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="clave" class="etiqueta">Contraseña:</label>
+                    <input type="password" id="clave" class="valor">
+                    <div class="messageErrorPassword" id="messagePass"></div>
+                </div>
+                <hr>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
